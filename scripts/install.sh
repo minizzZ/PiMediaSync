@@ -16,7 +16,7 @@ if [ "$(whoami)" != "root" ]; then
     exit 1
 fi
 
-HOMEDIR="${HOMEDIR:-/opt}"
+HOMEDIR="${HOMEDIR:/opt}"
 WORKDIR="${HOMEDIR}/pimediasync"
 
 # Setup hostname of device
